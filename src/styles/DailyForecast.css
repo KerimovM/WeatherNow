@@ -1,0 +1,19 @@
+.main-daily-div {
+  background-color: hsl(243, 27%, 20%);
+  border: 2px solid hsl(243, 23%, 24%);
+  border-radius: 10px;
+  padding: 10px 7px;
+  color: hsl(250, 6%, 84%);
+  width: 100px;
+  height: 152.55px;
+  text-align: center;
+}
+.main-daily-div > img {
+  width: 64px;
+  margin: 10% 0;
+}
+.degrees {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+}

@@ -1,0 +1,67 @@
+.main-hourly-div {
+  background-color: hsl(243, 27%, 20%);
+  max-height: 629px;
+  overflow-y: scroll;
+  width: 370px;
+  border-radius: 20px;
+  padding: 25px 18px;
+  font-size: 0.995rem;
+}
+.main-hourly-div::-webkit-scrollbar {
+  width: 4.7px;
+}
+.main-hourly-div::-webkit-scrollbar-track {
+  margin-block: 17px;
+  background: transparent;
+}
+.main-hourly-div::-webkit-scrollbar-thumb {
+  background: hsl(243, 23%, 24%);
+  border-radius: 4px;
+  border: 0.93px solid hsl(243, 23%, 30%);
+}
+.hourly-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+}
+#days-selector {
+  position: relative;
+}
+.selected-day-div {
+  background-color: hsl(243, 23%, 30%);
+  cursor: url("/images/pointinghand.svg"), auto;
+  color: hsl(0, 0%, 100%);
+  border: 0;
+  padding: 6px 13px;
+  border-radius: 5px;
+  outline: 0;
+  display: flex;
+  gap: 10px;
+  font-size: 0.88rem;
+}
+.selected-day-div:hover {
+  background-color: hsl(243, 23%, 24%);
+}
+.days-dropdown {
+  position: absolute;
+  z-index: 1;
+  top: 37.8px;
+  left: -89px;
+  background-color: hsl(243, 27%, 20%);
+  padding: 8px 7px;
+  border: 2px solid hsl(243, 23%, 24%);
+  box-shadow: 0px 0px 10px 10px hsla(243, 96%, 9%, 0.18);
+  border-radius: 10px;
+}
+
+.day {
+  padding: 9px 7px;
+  font-size: 0.9rem;
+  width: 175px;
+  border-radius: 5px;
+}
+.day:hover {
+  background: hsl(243, 23%, 24%);
+}

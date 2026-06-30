@@ -1,0 +1,23 @@
+.StatsBox {
+  background-color: hsl(243, 27%, 20%);
+  border: 2px solid hsl(243, 23%, 24%);
+  width: 177.41px;
+  height: 107px;
+  padding: 14.3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+#text {
+  font-size: 0.93rem;
+  color: hsl(250, 6%, 84%);
+}
+
+#prop {
+  font-weight: 300;
+  font-size: 1.7rem;
+  text-align: left;
+  color: hsl(0, 0%, 100%);
+}

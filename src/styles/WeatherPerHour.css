@@ -1,0 +1,29 @@
+.weather-per-hour {
+  margin-top: 14.7px;
+  height: 52.6px;
+  padding: 7px 12px;
+  background-color: hsl(243, 23%, 24%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  color: hsl(250, 6%, 84%);
+  border: 1.4px solid hsl(243, 23%, 30%);
+}
+.weather-per-hour:hover {
+  background-color: hsl(243, 23%, 30%);
+}
+
+.icon-and-hour-div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.icon-and-hour-div > img {
+  width: 37px;
+}
+
+.degree-per-hour {
+  font-size: 0.886rem;
+}

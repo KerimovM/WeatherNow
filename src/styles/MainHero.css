@@ -1,0 +1,62 @@
+.mainHero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.today {
+  left: 2.2%;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.degree-div {
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  font-style: italic;
+  left: 0;
+  top: 50%;
+  width: 98%;
+  transform: translateY(-50%);
+  position: absolute;
+  display: flex;
+  gap: 12.35px;
+  justify-content: end;
+  align-items: center;
+  font-size: 5.5rem;
+}
+.degree-div > p {
+  text-align: right;
+}
+.place-name {
+  font-weight: 600;
+  font-size: 1.65em;
+  color: hsl(0, 0%, 100%);
+}
+
+.todays-date {
+  color: hsl(250, 6%, 84%);
+  font-size: 0.97rem;
+}
+
+.mainHeroLoading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(243, 27%, 20%);
+  border-radius: 20px;
+  width: 100%;
+  max-width: 800px;
+  height: 286px;
+}
+#loading-txt {
+  font-size: 1.18rem;
+  color: hsl(240, 6%, 70%);
+  margin-top: -23px;
+  margin-left: 5px;
+}

@@ -1,0 +1,124 @@
+.search {
+  text-align: center;
+  margin-top: 3.5%;
+  position: relative;
+}
+
+.search > form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.search-bar {
+  position: relative;
+}
+
+#searchIcon {
+  top: 32%;
+  left: 3.4%;
+  position: absolute;
+  z-index: 3;
+  width: 17px;
+}
+
+#input {
+  width: 520px;
+  position: relative;
+  z-index: 2;
+  height: 47px;
+  border: 0;
+  border-radius: 10px;
+  outline: 0;
+  padding-left: 48px;
+  font-size: 1rem;
+  background-color: hsl(243, 27%, 20%);
+  color: hsl(0, 0%, 100%);
+  cursor: url("/images/pointinghand.svg"), auto;
+}
+#input::placeholder {
+  color: hsl(250, 6%, 84%);
+}
+#input:focus {
+  outline: 2px solid hsl(0, 0%, 100%);
+  outline-offset: 1px;
+}
+#input:hover {
+  background-color: hsl(243, 23%, 24%);
+}
+#submit-btn {
+  height: 47px;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 10px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(233, 67%, 56%);
+  font-size: 1rem;
+  cursor: url("/images/pointinghand.svg"), auto;
+}
+#submit-btn:focus {
+  outline: 2px solid hsl(233, 67%, 56%);
+  outline-offset: 3px;
+}
+#submit-btn:hover {
+  background-color: hsl(248, 70%, 36%);
+}
+
+.search-dropdown {
+  opacity: 0;
+  background-color: hsl(243, 27%, 20%);
+  width: 100%;
+  text-align: left;
+  color: hsl(0, 0%, 100%);
+  position: absolute;
+  font-size: 0.945rem;
+  z-index: 1;
+  top: 55px;
+  transform: translateY(-20px);
+  transition:
+    transform 0.45s ease-in-out,
+    opacity 0.45s ease-in-out;
+  border: 1px solid hsl(243, 23%, 30%);
+  border-radius: 10px;
+  padding: 10px;
+}
+.search-dropdown > img {
+  /* transform: translateY(7px); */
+  animation: 1s rotation ease-in-out infinite;
+  margin-right: 10px;
+}
+.search-dropdown > ul {
+  list-style-type: none;
+  text-align: left;
+}
+
+@keyframes rotation {
+  0% {
+    transform: translateY(3px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(3px) rotate(360deg);
+  }
+}
+
+.search-dropdown > ul > li {
+  padding: 10px 12px;
+  margin: 1.2px;
+  font-size: 0.945rem;
+  border-radius: 6px;
+  color: hsl(0, 0%, 100%);
+}
+
+.search-dropdown > ul > li:hover {
+  background-color: hsl(243, 23%, 24%);
+  border: 1.2px solid hsl(243, 23%, 30%);
+}
+.search-dropdown > ul > li:active {
+  background-color: hsl(243, 23%, 30%);
+}
+
+.search-bar:focus-within .search-dropdown {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
