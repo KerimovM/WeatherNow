@@ -76,7 +76,7 @@ function Header() {
               {mode == "metric" ? (
                 <li style={{ backgroundColor: "hsl(243, 23%, 24%)" }}>
                   Millimeters (mm)
-                  <img src="/src/images/icon-checkmark.svg" alt="check-mark" />
+                  <img src="/images/icon-checkmark.svg" alt="check-mark" />
                 </li>
               ) : (
                 <li>Millimeters (mm)</li>
