@@ -84,7 +84,7 @@ function Header() {
               {mode == "imperial" ? (
                 <li style={{ backgroundColor: "hsl(243, 23%, 24%)" }}>
                   Inches (in)
-                  <img src="/src/images/icon-checkmark.svg" alt="check-mark" />
+                  <img src="/images/icon-checkmark.svg" alt="check-mark" />
                 </li>
               ) : (
                 <li>Inches (in)</li>
